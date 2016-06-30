@@ -58,7 +58,7 @@
                         li.textContent = 'saved in inbox';
                     });
                     var params = [];
-                    params.push({key:'to', val:'LenAnderson'});
+                    params.push({key:'to', val:document.querySelector('.user > a').textContent});
                     params.push({key:'subject', val:'[SPAC] '+title});
                     params.push({key:'text', val:body});
                     params.push({key:'uh', val:document.querySelector('[name="uh"]').value});
